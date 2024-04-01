@@ -15,7 +15,7 @@ Image generators are computer programs that use deep learning algorithms to prod
 ```
 Amla is a rich source of vitamin C, B complex and antioxidants. These nutrients flush harmful toxins from the body and help fight the harmful free radicals. The presence of anti-inflammatory compounds in amla helps in lowering the levels of inflammation in the body and thus, preventing infections. It also contains immune-enhancing properties, which have a regenerative effect on the immune system and help fight infections better.
 ```
-- Output Generated Image:
+- Output Generated Image:</s>
 ![Image3](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/images/Amla.png)
 #
 - ## Important Libraries you have to download and install before using the models:
@@ -50,7 +50,7 @@ Firstly, download the libraries to use the models and change the mode from `cpu`
 ```
 Blockchain technology has the potential to revolutionize the way banks operate, especially in terms of reducing infrastructure costs. The implementation of blockchain in the banking industry can lead to significant cost savings by streamlining processes and eliminating the need for intermediaries.
 ```
-- Generated Image:
+- Generated Image:</s>
 ![Image1](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/images/preview1.png)
 
 
