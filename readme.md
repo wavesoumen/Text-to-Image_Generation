@@ -1,10 +1,24 @@
 
+- ## Important Warning/Notice:
+These models use the GPU (`cuda`), so keep in mind that you must have gpu in your local system if you wanna run the models on your system,
+####
+or you can use the `Google-colab` and enable the `T4 GPU` for the best experience.
 # Text-to-Image (T2I) Generation:
 Text-to-image generation is a machine learning technique that uses neural networks to create images from text descriptions.
 #### 
 Image generators are computer programs that use deep learning algorithms to produce digital images from scratch (usually text) or modify existing ones (usually images). These generators can create highly realistic and complex images, including landscapes, faces, objects, and more.
-Google Colab is here [Image-to-text-tags](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/Image_to_Text_Tags_Title.ipynb) for referance.
-- Important Libraries:
+# 
+- Google Colab is here [`Text to Image Generator g-colab`](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/Text_to_Image_part2.ipynb) for reference.
+#
+- ### Complete Example:
+- Input Prompt (Amla):
+```
+Amla is a rich source of vitamin C, B complex and antioxidants. These nutrients flush harmful toxins from the body and help fight the harmful free radicals. The presence of anti-inflammatory compounds in amla helps in lowering the levels of inflammation in the body and thus, preventing infections. It also contains immune-enhancing properties, which have a regenerative effect on the immune system and help fight infections better.
+```
+- Output Generated Image:
+![Image3](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/images/Amla.png)
+#
+- ## Important Libraries you have to download and install before using the models:
 ```
 pip install diffusers
 pip install diffusers --upgrade
@@ -17,43 +31,36 @@ from GPUtil import showUtilization as gpu_usage
 from numba import cuda
 ```
 
-- ### Complete Example:
-![Image3](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/example2.png)
-- Output Text and Tags:
-```
-a photography of a wooden block spelling trivia on a table
-arafed wooden blocks spelling trivia on a wooden surface
-['Photography', 'Creativity', 'Storytelling', 'a Photography', 'Documentary', 'a Storytelling', 'Creative']
-```
-
 ## Explanation:
-### Let's split this in 2 parts:
-- Image to Text Generation.
-- Tags Generation.
-- ## Text to Image Generation:
-For generating or extracting Text from any Image, there are some ML models prefernces below:
-- [Salesforce/blip-image-captioning-base](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/blip_base_Image-to-text.py)
-- [Salesforce/blip-image-captioning-large](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/blip_large_Image-to-text.py)
-- [Microsoft/kosmos-2-patch14-224](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/ms_kosmos_Image-to-text.py)
+### The most used and popular model for generating Images:
+- [Open Dalle](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/img_opendalle.py)
+- [Open Dallev1.1](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/opendalleV1_1.py)
+- [Stable Diffusion](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/stable_diffusion.py)
+- [SDXL Turbo](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/sdxl_turbo.py)
+- SDXL Base 1.0.
+- SDXL DPO Turbo
+- Playground-v2-1024px-aestheti.
 
-These are some models that uses CPU also the GPU(cuda).
-- We can use Locally uploaded images and also the online image link for generating out result output.
-#### Example1 (Local Image):
-![Image1](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/human1.png)
-- Output Text:
-```
-a woman with a white shirt and a black background
-```
+### GPU Checker: Check the GPU from the [mentioned function](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/gpu_checker.py).
+- ## Suggesion:
+Firstly, download the libraries to use the models and change the mode from `cpu` to `GPU` or `T4 gpu`. </s>
 
-#### Example2 (Online Image Link):
-![Image2](https://github.com/wavesoumen/Image-to-Text_Tags-I2TT-Generation/blob/main/example1.jpg)
-- Output Text:
+### Example1 (open-dalle):
+- Input Prompt:
 ```
-a photography of a human head with a digital interface in the background
-a robot head with a circuit in the background
+Blockchain technology has the potential to revolutionize the way banks operate, especially in terms of reducing infrastructure costs. The implementation of blockchain in the banking industry can lead to significant cost savings by streamlining processes and eliminating the need for intermediaries.
 ```
-- ## Tags Generation:
-In this part I used the Fabiochiu/t5-base-tag-generation.
+- Generated Image:
+![Image1](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/images/preview1.png)
+
+
+### Example2 (open-dallev1.1):
+- Input Prompt:
+```
+Blockchain technology has the potential to revolutionize the way banks operate, especially in terms of reducing infrastructure costs. The implementation of blockchain in the banking industry can lead to significant cost savings by streamlining processes and eliminating the need for intermediaries.
+```
+- Generated Image:
+![Image1](https://github.com/wavesoumen/Text-to-Image_Generation/blob/main/images/preview2.png)
 
 #### 
 For any further queries or Explanation, contact me.
